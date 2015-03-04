@@ -1,0 +1,13 @@
+{
+    "name": "bauncms/site",
+    "description": "The Baun Site",
+    "authors": [
+        {
+            "name": "Gilbert Pellegrom",
+            "email": "gilbert@pellegrom.me"
+        }
+    ],
+    "require": {
+        "bauncms/framework": "~1.0"
+    }
+}

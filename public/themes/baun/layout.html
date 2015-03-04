@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}
+		{% if info.title %}
+			{{ info.title }} -
+		{% endif %}
+		Baun
+	{% endblock %}</title>
+	{% if info.description %}
+	<meta name="description" content="{{ info.description }}">
+	{% endif %}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="/themes/baun/bower_components/skeleton/css/normalize.css">
+	<link rel="stylesheet" href="/themes/baun/bower_components/skeleton/css/skeleton.css">
+	<link rel="stylesheet" href="/themes/baun/style.css">
+</head>
+<body>
+
+	<div class="header container">
+		<h1><a href="/">Baun</a></h1>
+	</div>
+
+	<div class="content container">
+		<div class="row">
+			<div class="three columns">
+				{{ baun_nav() }}
+			</div>
+			<div class="nine columns">
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
