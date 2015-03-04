@@ -1,8 +1,11 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{% block title %}
 		{% if info.title %}
 			{{ info.title }} -
@@ -13,10 +16,19 @@
 	<meta name="description" content="{{ info.description }}">
 	{% endif %}
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="/themes/baun/bower_components/skeleton/css/normalize.css">
-	<link rel="stylesheet" href="/themes/baun/bower_components/skeleton/css/skeleton.css">
-	<link rel="stylesheet" href="/themes/baun/style.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="/themes/baun/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="/themes/baun/css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="/themes/baun/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="/themes/baun/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="/themes/baun/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="/themes/baun/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="/themes/baun/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+	<!--[if gte IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+	<script src="/themes/baun/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,22 +39,83 @@
 	ga('send', 'pageview');
 	</script>
 </head>
-<body>
-
-	<div class="header container">
-		<h1><a href="/">Baun</a></h1>
-	</div>
-
-	<div class="content container">
-		<div class="row">
-			<div class="three columns">
-				{{ baun_nav() }}
-			</div>
-			<div class="nine columns">
-				{% block content %}{% endblock %}
-			</div>
+<body class="no-loader">
+	<div class="loader">
+		<div class="spinner">
+		  <div class="double-bounce1"></div>
+		  <div class="double-bounce2"></div>
 		</div>
 	</div>
 
+	<div class="nav-container">
+		<nav class="simple-bar top-bar">
+			<div class="container">
+
+				<div class="row nav-menu">
+					<div class="col-md-3 col-sm-3 columns">
+						<a href="/">
+							<img class="logo logo-light" alt="Logo" src="/themes/baun/img/logo-light.png">
+							<img class="logo logo-dark" alt="Logo" src="/themes/baun/img/logo-dark.png">
+						</a>
+					</div>
+
+					<div class="col-md-9 col-sm-9 columns text-right">
+						<ul class="menu">
+							<li><a href="/docs">Documentation</a></li>
+							<li><a href="/download">Download</a></li>
+							<li><a href="https://github.com/BaunCMS/Baun">GitHub</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mobile-toggle">
+					<i class="icon icon_menu"></i>
+				</div>
+
+			</div>
+		</nav>
+
+	</div>
+
+	<div class="main-container">
+		{% block content %}{% endblock %}
+	</div>
+
+	<div class="footer-container">
+		<footer class="short bg-secondary-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<span class="sub">Copright &copy; Baun</span>
+						<ul>
+							<li><a href="/docs">Documentation</a></li>
+							<li><a href="/download">Download</a></li>
+							<li><a href="https://github.com/BaunCMS/Baun">GitHub</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6 text-right">
+						Baun was created by <a href="http://gilbert.pellegrom.me">Gilbert Pellegrom</a> from
+						<a href="http://dev7studios.com">Dev7studios</a>.<br>Released under the MIT license.
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="/themes/baun/js/jquery.min.js"></script>
+	<script src="/themes/baun/js/jquery.plugin.min.js"></script>
+	<script src="/themes/baun/js/bootstrap.min.js"></script>
+	<script src="/themes/baun/js/jquery.flexslider-min.js"></script>
+	<script src="/themes/baun/js/smooth-scroll.min.js"></script>
+	<script src="/themes/baun/js/skrollr.min.js"></script>
+	<script src="/themes/baun/js/spectragram.min.js"></script>
+	<script src="/themes/baun/js/scrollReveal.min.js"></script>
+	<script src="/themes/baun/js/isotope.min.js"></script>
+	<script src="/themes/baun/js/twitterFetcher_v10_min.js"></script>
+	<script src="/themes/baun/js/lightbox.min.js"></script>
+	<script src="/themes/baun/js/jquery.countdown.min.js"></script>
+	<script src="/themes/baun/js/scripts.js"></script>
 </body>
 </html>

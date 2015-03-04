@@ -1,5 +1,20 @@
 {% extends "layout.html" %}
 
 {% block content %}
-	{{ content|raw }}
+	<section class="article-single">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-4 col-md-3">
+					{{ baun_nav() }}
+				</div>
+
+				<div class="col-sm-8">
+					<div class="article-body">
+						{{ content|raw }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 {% endblock %}
