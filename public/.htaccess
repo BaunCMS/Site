@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    RewriteCond %{HTTP_HOST} ^www\.bauncms\.com [NC]
+    RewriteRule ^(.*)$ http://bauncms.com/$1 [L,R=301]
+
     # Redirect Trailing Slashes...
     RewriteRule ^(.*)/$ /$1 [L,R=301]
 
