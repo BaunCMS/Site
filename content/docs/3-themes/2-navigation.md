@@ -6,19 +6,21 @@ Baun takes the hassle out of creating your own navigation by generating it for y
 you must use the `{{ baun_nav() }}` function in your template. The navigation HTML will look like:
 
     <ul class="baun-nav">
-        <li class="baun-nav-item item-0 baun-nav-active"><a href="/">Home</a></li>
-        <li class="baun-nav-item item-1"><a href="/example">Example</a></li>
-        <li class="baun-nav-item baun-nav-has-children">Setup
+        <li class="baun-nav-item baun-nav-item-home baun-nav-active"><a href="/">Home</a></li>
+        <li class="baun-nav-item baun-nav-item-example"><a href="/example">Example</a></li>
+        <li class="baun-nav-item baun-nav-has-children baun-nav-section-setup">
+            <span class="baun-nav-section-title">Setup</span>
             <ul>
-                <li class="baun-nav-item item-0"><a href="/setup/installing">Installing</a></li>
-                <li class="baun-nav-item item-1"><a href="/setup/configuration">Configuration</a></li>
-                <li class="baun-nav-item item-2"><a href="/setup/updating">Updating</a></li>
+                <li class="baun-nav-item baun-nav-item-installing"><a href="/docs/setup/installing">Installing</a></li>
+                <li class="baun-nav-item baun-nav-item-configuration"><a href="/docs/setup/configuration">Configuration</a></li>
+                <li class="baun-nav-item baun-nav-item-updating"><a href="/docs/setup/updating">Updating</a></li>
             </ul>
         </li>
-        <li class="baun-nav-item baun-nav-has-children">Content
+        <li class="baun-nav-item baun-nav-has-children baun-nav-section-content">
+            <span class="baun-nav-section-title">Content</span>
             <ul>
-                <li class="baun-nav-item item-0"><a href="/content/adding-content">Adding Content</a></li>
-                <li class="baun-nav-item item-1"><a href="/content/markdown-formatting">Markdown Formatting</a></li>
+                <li class="baun-nav-item baun-nav-item-adding-content"><a href="/docs/content/adding-content">Adding Content</a></li>
+                <li class="baun-nav-item baun-nav-item-markdown-formatting"><a href="/docs/content/markdown-formatting">Markdown Formatting</a></li>
             </ul>
         </li>
         ...
