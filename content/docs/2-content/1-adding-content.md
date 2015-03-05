@@ -45,7 +45,7 @@ the page. These two sections are split by a `----` separator. For example:
     # Home
     This is come example **Markdown** content
 
-You can put any attributes in the info section that you want (which can be used in [custom templates](/themes/custom-templates))
+You can put any attributes in the info section that you want (which can be used in [custom templates](/docs/themes/custom-templates))
 but a list of default attributes are as follows:
 
 Attribute | Description

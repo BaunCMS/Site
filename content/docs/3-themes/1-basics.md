@@ -22,7 +22,7 @@ Template    | Description
 `page.html` | The default template for all pages
 `404.html`  | Shown when no page is found for the current URL
 
-You can also create [custom templates](/themes/custom-templates) if you wish.
+You can also create [custom templates](/docs/themes/custom-templates) if you wish.
 
 ## Template Variables
 
@@ -33,7 +33,7 @@ Variable | Description
 -------- | -----------
 `{{ content|raw }}` | Shows the page content that has been converted from Markdown to HTML. You need to use the `raw` filter as it contains HTML
 `{{ info }}` | Contains the attributes from the info section of the page. For example `{{ info.title }}`, `{{ info.description }}` etc.
-`{{ baun_nav() }}` | Technically this is a function not a variable. See the [navigation docs](/themes/navigation)
+`{{ baun_nav() }}` | Technically this is a function not a variable. See the [navigation docs](/docs/themes/navigation)
 
 ## Layouts
 
