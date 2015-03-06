@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<section class="blog-list-3 bg-white">
+
+		{% for post in posts %}
+			<div class="blog-snippet-3">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+							<h1><a href="/{{ post.route }}">{{ post.title }}</a></h1>
+							{% if post.excerpt %}
+								<p class="lead">
+									{{ post.excerpt }}
+								</p>
+							{% endif %}
+							<i class="icon icon_calendar"></i><span class="alt-font">Published {{ post.published }}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+
+		{% if pagination.total_pages > 1 %}
+			<div class="pagination">
+				{% if pagination.current_page > 1 %}
+					<a href="{{ pagination.base_url }}?page={{ pagination.current_page - 1 }}" class="prev">&lt; Prev</a>
+				{% endif %}
+				{% for i in 1..pagination.total_pages %}
+					{% if i == pagination.current_page %}
+						<span class="current-page">{{ i }}</span>
+					{% else %}
+						<a href="{{ pagination.base_url }}?page={{ i }}">{{ i }}</a>
+					{% endif %}
+				{% endfor %}
+				{% if pagination.current_page < pagination.total_pages %}
+					<a href="{{ pagination.base_url }}?page={{ pagination.current_page + 1 }}" class="next">Next &gt;</a>
+				{% endif %}
+			</div>
+		{% endif %}
+
+	</section>
+{% endblock %}

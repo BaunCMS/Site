@@ -50,3 +50,9 @@ footer .sub a:hover {
 }
 .baun-nav-active a { color: #777; }
 .baun-nav-section-docs > .baun-nav-section-title { display: none; }
+
+#disqus_thread {
+	margin-top: 50px;
+	padding-top: 50px;
+	border-top: 1px solid #ddd;
+}
