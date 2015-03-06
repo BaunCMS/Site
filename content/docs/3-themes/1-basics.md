@@ -15,12 +15,14 @@ This means Baun will look for template files in the `public/themes/baun` folder.
 
 ## Templates
 
-Themes are made up of several template files. The minimum required templates are:
+Themes are made up of several template files:
 
-Template    | Description
------------ | -----------
-`page.html` | The default template for all pages
-`404.html`  | Shown when no page is found for the current URL
+Template               | Description
+---------------------- | -----------
+`page.html`            | The default template for all pages
+`404.html`             | Shown when no page is found for the current URL
+`blog.html` (optional) | Shows a list of posts as the [blog](/docs/content/blogging) index (see [blog docs](/docs/themes/blogs))
+`post.html` (optional) | Shows an individual [blog](/docs/content/blogging) post (see [blog docs](/docs/themes/blogs))
 
 You can also create [custom templates](/docs/themes/custom-templates) if you wish.
 
