@@ -5,6 +5,10 @@ exclude_from_nav: true
 
 You can download the latest version of Baun from the [GitHub releases page](https://github.com/BaunCMS/Baun/releases).
 
-If you prefer a geekier approach you can clone the Git repo by doing:
+If you prefer a geekier approach you can install Baun using composer:
+
+    composer create-project bauncms/baun
+
+Or you can clone the Git repo by doing:
 
     git clone https://github.com/BaunCMS/Baun.git

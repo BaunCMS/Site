@@ -2,7 +2,8 @@ title: Configuration
 ----
 # Configuring Baun
 
-Baun needs no configuration to get started! However, you may wish to review the `config/app.php` file and its documentation.
+Baun needs no configuration to get started! However, you may wish to review the configuration files in the
+`/config` folder and their inline documentation.
 
 ## Pretty URLs
 

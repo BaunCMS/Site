@@ -7,12 +7,21 @@ Baun has the following minimum requirements:
 * Apache 2 with URL rewriting (mod_rewrite) or nginx
 * PHP 5.4+
 
-## Install Composer
+## Without SSH Access
+
+Baun comes packaged with it's own auto-installer. This means that the first time you try to load up Baun,
+it will automatically try and install the necessary composer packages. If this process fails, you will need
+to follow the "With SSH Access" install instructions below.
+
+1. [Download the latest version](/download) of Baun
+2. Upload the files to your server (normally using FTP or some other deployment method)
+3. Make sure your virtual host points to the `/public` folder of Baun and not the root folder
+4. Point your browser to the install location and let the auto-installer run
+
+## With SSH Access
 
 Baun utilizes [Composer](http://getcomposer.org) to manage its dependencies. So, before installing Baun, you will
 need to make sure you have SSH access to your server and Composer installed on your server.
-
-## Download & Install Baun
 
 1. [Download the latest version](/download) of Baun
 2. Upload the files to your server (normally using FTP or some other deployment method)

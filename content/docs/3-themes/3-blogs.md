@@ -24,7 +24,7 @@ Variable    | Description
 `excerpt`   | A truncated excerpt of the post content
 `published` | A published date string
 
-Variables like `excerpt` and `published` have related settings in `config/app.php`.
+Variables like `excerpt` and `published` have related settings in `config/blog.php`.
 
 ### Pagination Data
 
@@ -34,7 +34,7 @@ Variable       | Description
 `current_page` | The current page (1 indexed)
 `base_url`     | The base URI of the blog root
 
-Pagination also has related settings in `config/app.php`. A pagination block can be created by doing something like:
+Pagination also has related settings in `config/blog.php`. A pagination block can be created by doing something like:
 
     {% if pagination.total_pages > 1 %}
         <div class="pagination">

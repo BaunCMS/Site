@@ -12,7 +12,7 @@ in descending order based on the their published date.
     20150220-post-1.md
 
 The blog folder can be ordered as normal using a numerical prefix. Also the name of the "blog" folder can be changed in
-`config/app.php` if you want to call it something else (e.g. articles). Here is an example of the URL structure of some
+`config/blog.php` if you want to call it something else (e.g. articles). Here is an example of the URL structure of some
 different configurations:
 
 File                               | URL
@@ -27,7 +27,7 @@ The blog root (`yoursite.com/blog`) will also now be a page with using the `blog
 
 ## Settings
 
-There are several settings in `config/app.php` relating to blogging. Review the `config/app.php` file and its documentation
+There are several settings in `config/blog.php` relating to blogging. Review the `config/blog.php` file and its documentation
 for more information.
 
 ## Templates

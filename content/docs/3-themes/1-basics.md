@@ -35,6 +35,7 @@ Variable | Description
 -------- | -----------
 `{{ content|raw }}` | Shows the page content that has been converted from Markdown to HTML. You need to use the `raw` filter as it contains HTML
 `{{ info }}` | Contains the attributes from the info section of the page. For example `{{ info.title }}`, `{{ info.description }}` etc.
+`{{ base_url }}` | Base URL of the site
 `{{ baun_nav() }}` | Technically this is a function not a variable. See the [navigation docs](/docs/themes/navigation)
 
 ## Layouts
