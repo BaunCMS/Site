@@ -88,7 +88,7 @@ The config and providers available from `Baun\Plugin` are as follows:
 Provider | Description
 -------- | -----------
 `$this->config` | Access to config data (e.g. `$this->config->get('app.debug')`)
-`$this->events` | [Events provider](https://github.com/BaunCMS/Framework/blob/master/src/Providers/Events.php)
+`$this->events` | [Events provider](https://github.com/BaunCMS/Framework/blob/master/src/Providers/Events.php) (see the [events docs](/docs/plugins/events))
 `$this->router` | [Router provider](https://github.com/BaunCMS/Framework/blob/master/src/Providers/Router.php)
 `$this->theme` |  [Theme provider](https://github.com/BaunCMS/Framework/blob/master/src/Providers/Theme.php)
 `$this->contentParser` | [Content parser provider](https://github.com/BaunCMS/Framework/blob/master/src/Providers/ContentParser.php)
