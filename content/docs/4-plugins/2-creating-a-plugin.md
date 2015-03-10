@@ -94,3 +94,18 @@ Provider | Description
 `$this->contentParser` | [Content parser provider](https://github.com/BaunCMS/Framework/blob/master/src/Providers/ContentParser.php)
 
 To get an idea of how to use these providers have a look at the [Blog RSS plugin source code](https://github.com/BaunCMS/Baun-Blog-Rss/blob/master/src/BlogRss.php).
+
+## Config & Assets
+
+If your plugin requires custom config files or custom assets you should include these in the `/config` and `/assets` folders
+of your plugin respectively. After a user has installed your plugin they will then need to use the [Baun CLI](/docs/advanced/cli)
+to publish these files (copy them) into the Baun install. This can be done using the following commands:
+
+    php baun publish:config gilbitron/myplugin
+    php baun publish:assets gilbitron/myplugin
+
+Where `gilbitron/myplugin` is the name of your plugin in `composer.json`. Once published the files can be found in the
+following locations:
+
+* Config files will be published to the `config/plugins/gilbitron/myplugin` folder
+* Assets will be published to the `public/assets/plugins/gilbitron/myplugin` folder
