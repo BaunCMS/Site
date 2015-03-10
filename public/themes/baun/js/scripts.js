@@ -443,7 +443,7 @@ $(window).load(function(){
     setTimeout(function(){$('.loader').hide();}, 600);
 
 	// Mailchimp/Campaign Monitor Mail List Form Scripts
-	$('form.mail-list-signup').on('submit', function(){
+	/*$('form.mail-list-signup').on('submit', function(){
 
 		var iFrame = $(this).closest('section, header').find('iframe.mail-list-form'),
 		thisForm 		= $(this).closest('.mail-list-signup'),
@@ -481,7 +481,7 @@ $(window).load(function(){
 			iFrame.contents().find('form').attr('target', '_blank').submit();
 		}
 		return false;
-	});
+	});*/
 
 	// Blog Masonry
 
