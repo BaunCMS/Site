@@ -21,6 +21,7 @@
 
 	<link href="/themes/baun/css/line-icons.min.css" rel="stylesheet">
 	<link href="/themes/baun/css/elegant-icons.min.css" rel="stylesheet">
+	<link href="/themes/baun/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
 	<link href="/themes/baun/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/themes/baun/css/theme.css" rel="stylesheet">
 	<link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_light.min.css" rel="stylesheet">
@@ -64,6 +65,11 @@
 						<ul class="menu">
 							<li><a href="/docs">Documentation</a></li>
 							<li><a href="/download">Download</a></li>
+							<li class="has-dropdown"><a href="#">Plugins</a>
+								<ul class="subnav">
+									<li><a href="/plugins/admin">Admin UI</a></li>
+								</ul>
+							</li>
 							<li><a href="/blog">Blog</a></li>
 							<li><a href="http://forum.bauncms.com">Forum</a></li>
 							<li><a href="https://github.com/BaunCMS/Baun">GitHub</a></li>
@@ -83,24 +89,6 @@
 	<div class="main-container">
 		{% block content %}{% endblock %}
 	</div>
-
-	<section class="strip bg-primary">
-		<div class="container">
-			<div class="row clearfix">
-				<form action="http://sendy.dev7studios.com/subscribe" method="POST" accept-charset="utf-8" class="mail-list-signup">
-					<input type="hidden" name="list" value="732ZcQzD6lrLWGLminyBEQ">
-					<div class="col-sm-9 col-xs-12 pull-left clear-fix">
-						<h3 class="text-white pull-left"><strong>Get Baun updates in your Inbox.&nbsp;</strong></h3>
-						<input type="email" name="email" class="signup-email-field" placeholder="Enter your email address here..." required>
-					</div>
-
-					<div class="col-sm-3 col-xs-12 pull-right text-right">
-						<input type="submit" class="btn btn-primary btn-filled" value="Subscribe">
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
 
 	<div class="footer-container">
 		<footer class="short bg-secondary-1">
@@ -136,6 +124,7 @@
 	<script src="/themes/baun/js/spectragram.min.js"></script>
 	<script src="/themes/baun/js/scrollReveal.min.js"></script>
 	<script src="/themes/baun/js/isotope.min.js"></script>
+	<script src="/themes/baun/js/lightbox.min.js"></script>
 	<script src="/themes/baun/js/scripts.js"></script>
 </body>
 </html>

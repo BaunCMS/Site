@@ -50,10 +50,20 @@ footer .sub a:hover {
 }
 .baun-nav-active a { color: #777; }
 .baun-nav-item-blog,
+.baun-nav > .baun-nav-section-plugins,
 .baun-nav-section-docs > .baun-nav-section-title { display: none; }
 
 #disqus_thread {
 	margin-top: 50px;
 	padding-top: 50px;
 	border-top: 1px solid #ddd;
+}
+
+.plugin-screenshots {
+	background: #2c3e50 !important;
+	color: #fff;
+}
+.plugin-screenshots h1 {
+	color: #fff;
+	margin-bottom: 0;
 }
