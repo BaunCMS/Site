@@ -4,5 +4,6 @@
 return [
 
 	'BaunPlugin\BlogRss\BlogRss',
+	'BaunPlugin\Admin\Admin',
 
 ];
