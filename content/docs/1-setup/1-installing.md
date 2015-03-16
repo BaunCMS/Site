@@ -18,6 +18,9 @@ to follow the "With SSH Access" install instructions below.
 3. Make sure your virtual host points to the `/public` folder of Baun and not the root folder
 4. Point your browser to the install location and let the auto-installer run
 
+If the auto-installer fails you can always run `composer install` on your local computer and upload the
+generated `/vendor` folder with the rest of your Baun install.
+
 ## With SSH Access
 
 Baun utilizes [Composer](http://getcomposer.org) to manage its dependencies. So, before installing Baun, you will
@@ -28,6 +31,11 @@ need to make sure you have SSH access to your server and Composer installed on y
 3. Login to your server using SSH
 4. Navigate to the installation location of Baun and run `composer install`
 5. Make sure your virtual host points to the `/public` folder of Baun and not the root folder
+
+## Video
+A quick video demonstrating how to install Baun on your local computer with MAMP Pro.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Cd3oSGeZJ0" frameborder="0" allowfullscreen></iframe>
 
 ## Setup Apache Virtual Host
 

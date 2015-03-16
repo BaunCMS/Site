@@ -1,4 +1,4 @@
-title: Admin UI Plugin
+title: Admin Plugin
 exclude_from_nav: true
 template: plugin-admin
 ----
