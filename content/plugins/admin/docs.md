@@ -18,8 +18,8 @@ Add this line to your `config/plugins.php`:
 
 Publish the required config files and assets by running:
 
-    php baun config:publish bauncms/baun-admin
-    php baun assets:publish bauncms/baun-admin
+    php baun publish:config bauncms/baun-admin
+    php baun publish:assets bauncms/baun-admin
 
 The generated config file will be available at `config/plugins/bauncms/baun-admin/admin.php`.
 
