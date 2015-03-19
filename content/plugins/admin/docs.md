@@ -43,16 +43,19 @@ Once you are logged in you will see a list of pages (and posts if you have a blo
 
 ![List of pages](/themes/baun/img/plugins/screen-2.png)
 
-Creating an editing content is done in a similar fashion as if you were editing the file on your own computed using a
+By default the "simple" editor will be enabled. This allows you to create and edit content in a familiar fashion using
+simple text inputs and a WYSIWYG editor (with a preview).
+
+![Simple editor](/themes/baun/img/plugins/screen-3.png)
+
+If you prefer something a bit more "raw" you can enable the "advanced" editor by changing the setting in the plugin
+config file. In "advanced" mode editing is done as if you were editing the file on your own computed using a
 text editor. You enter meta information about the page in the header and the actual page content in the content box.
 
-![Content editor](/themes/baun/img/plugins/screen-3.png)
+![Advanced editor](/themes/baun/img/plugins/screen-4.png)
 
-You can't create subfolder directly using the admin editor however you can create pages within subfolders, and the
+You can't create subfolders directly using the admin editor however you can create pages within subfolders, and the
 subfolder will automatically be created for you.
-
-If you need to rename or move a page, you must create a new page (copy and paste the header and content) and then delete
-the old page. Direct renaming of pages is not currently supported.
 
 ## Support
 

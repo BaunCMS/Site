@@ -67,3 +67,14 @@ footer .sub a:hover {
 	color: #fff;
 	margin-bottom: 0;
 }
+
+@media (min-width: 768px) {
+	.image-gallery .image-holder {
+		height: 158px;
+	}
+}
+@media (min-width: 992px) {
+	.image-gallery .image-holder {
+		height: 270px;
+	}
+}
