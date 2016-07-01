@@ -1,3 +1,4 @@
 /vendor/
 composer.lock
 config/plugins/bauncms/baun-admin/admin.php
+/node_modules/
