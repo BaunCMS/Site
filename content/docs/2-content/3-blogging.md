@@ -30,6 +30,11 @@ The blog root (`yoursite.com/blog`) will also now be a page with using the `blog
 There are several settings in `config/blog.php` relating to blogging. Review the `config/blog.php` file and its documentation
 for more information.
 
+## Feed
+
+There is the possibility to publish the complete article in the feed and not a certain part. To do this, the file `vendor / bauncms / baun-blog-rss / src / templates / feed.html` has to be edited.
+In line 14, replace `<description> {{post.excerpt}} </ description>` against `<description> {{post.content}} </ description>`. Now the full article is in the feed.
+
 ## Templates
 
 There are two templates that relate specifically to blogging:
